@@ -1,0 +1,14 @@
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.csproj.AssemblyReference.cache
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.AssemblyInfoInputs.cache
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.AssemblyInfo.cs
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.csproj.CoreCompileInputs.cache
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.sourcelink.json
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\bin\Debug\net8.0\ClCompany.dll.config
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\bin\Debug\net8.0\ClCompany.deps.json
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\bin\Debug\net8.0\ClCompany.dll
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\bin\Debug\net8.0\ClCompany.pdb
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.dll
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\refint\ClCompany.dll
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ClCompany.pdb
+C:\Users\tarik\Documents\GitHub\OOAD-TarikJalil-2425\SlnProject\ClCompany\obj\Debug\net8.0\ref\ClCompany.dll

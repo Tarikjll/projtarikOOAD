@@ -1,0 +1,44 @@
+﻿<Page
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:av="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="av" x:Class="WpfCompany.YearReportPage"
+      Title="Jaarrapporten" av:DesignHeight="436.395" av:DesignWidth="934.203">
+
+    <DockPanel Margin="10">
+        <!-- Filter bovenaan -->
+        <StackPanel DockPanel.Dock="Top"
+                Orientation="Horizontal"
+                VerticalAlignment="Center"
+                Margin="0,0,0,10">
+            <TextBlock Text="Filter op jaar:" VerticalAlignment="Center"/>
+            <ComboBox x:Name="cbYears"
+                Width="100"
+                Margin="5,0,0,0"
+                SelectionChanged="CbYears_SelectionChanged"/>
+            <Button Content="Ververs"
+              Margin="10,0,0,0"
+              Click="BtnRefresh_Click"/>
+        </StackPanel>
+
+        <!-- Lijst met rapporten -->
+        <DataGrid x:Name="dgReports"
+              AutoGenerateColumns="False"
+              CanUserAddRows="False"
+              IsReadOnly="True">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="ID"
+                            Binding="{Binding Id}"
+                            Width="50"/>
+                <DataGridTextColumn Header="Jaar"
+                            Binding="{Binding Year}"
+                            Width="80"/>
+                <DataGridTextColumn Header="FTE"
+                            Binding="{Binding Fte}"
+                            Width="80"/>
+                <DataGridTextColumn Header="Datum laatste wijziging"
+                            Binding="{Binding LastModified, StringFormat=d}"
+                            Width="150"/>
+            </DataGrid.Columns>
+        </DataGrid>
+    </DockPanel>
+</Page>

@@ -1,0 +1,48 @@
+﻿<Page x:Class="WpfCompany.LoginPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Bedrijf Login">
+
+    <Grid Width="320" Height="180" Margin="20"
+        VerticalAlignment="Center"
+        HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0"
+               Text="Gebruikersnaam:"
+               VerticalAlignment="Center"
+               Margin="0,0,8,8"/>
+        <TextBox   Grid.Row="0" Grid.Column="1"
+               x:Name="txtUsername"
+               Margin="0,0,0,8"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0"
+               Text="Wachtwoord:"
+               VerticalAlignment="Center"
+               Margin="0,0,8,8"/>
+        <PasswordBox Grid.Row="1" Grid.Column="1"
+                 x:Name="pbPassword"
+                 Margin="0,0,0,8"/>
+
+        <Button    Grid.Row="2" Grid.ColumnSpan="2"
+               Content="Inloggen"
+               Width="100"
+               HorizontalAlignment="Right"
+               Click="BtnLogin_Click"/>
+
+        <TextBlock Grid.Row="3" Grid.ColumnSpan="2"
+               x:Name="lblMessage"
+               Foreground="Red"
+               TextWrapping="Wrap"
+               Margin="0,12,0,0"/>
+    </Grid>
+</Page>

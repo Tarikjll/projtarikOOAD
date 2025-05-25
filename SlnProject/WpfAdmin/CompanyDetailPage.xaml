@@ -1,0 +1,93 @@
+﻿<Page x:Class="WpfAdmin.CompanyDetailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="Bedrijfsgegevens">
+
+    <!-- DockPanel als root, zodat je eventueel links je DataGrid of navbalk houdt -->
+    <DockPanel Background="Transparent">
+
+        <!-- Optioneel: je linkerdeel (DataGrid, navbalk) blijft gewoon staan -->
+        <!-- DockPanel.Dock="Left" indien je hier iets wilt vastpinnen -->
+        <!--<StackPanel DockPanel.Dock="Left" Width="200" Background="#EEE">
+      ... je navigatie of overzicht ...
+    </StackPanel>-->
+
+        <!-- Het detail-formulier komt in de overige ruimte -->
+        <Grid Background="Transparent">
+            <!-- Center een border-card -->
+            <Border Width="400"
+              Padding="16"
+              Background="White"
+              CornerRadius="6"
+              BorderBrush="#CCC"
+              BorderThickness="1"
+              HorizontalAlignment="Center"
+              VerticalAlignment="Center"
+              Margin="10">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Naam -->
+                    <TextBlock Grid.Row="0" Grid.Column="0"
+                     Text="Naam:" 
+                     VerticalAlignment="Center"
+                     Margin="0,0,8,8"/>
+                    <TextBox   Grid.Row="0" Grid.Column="1"
+                     Text="{Binding Name}"
+                     IsReadOnly="True"
+                     Margin="0,0,0,8"/>
+
+                    <!-- Login -->
+                    <TextBlock Grid.Row="1" Grid.Column="0"
+                     Text="Login:" 
+                     VerticalAlignment="Center"
+                     Margin="0,0,8,8"/>
+                    <TextBox   Grid.Row="1" Grid.Column="1"
+                     Text="{Binding Login}"
+                     IsReadOnly="True"
+                     Margin="0,0,0,8"/>
+
+                    <!-- Status -->
+                    <TextBlock Grid.Row="2" Grid.Column="0"
+                     Text="Status:" 
+                     VerticalAlignment="Center"
+                     Margin="0,0,8,8"/>
+                    <ComboBox Grid.Row="2" Grid.Column="1"
+                    SelectedValuePath="Content"
+                    SelectedValue="{Binding Status, Mode=TwoWay}"
+                    Margin="0,0,0,8">
+                        <ComboBoxItem Content="pending"/>
+                        <ComboBoxItem Content="active"/>
+                        <ComboBoxItem Content="rejected"/>
+                    </ComboBox>
+
+                    <!-- Eventueel extra velden hier (Grid.Row="3") -->
+
+                    <!-- Buttons -->
+                    <StackPanel Grid.Row="4" Grid.ColumnSpan="2"
+                      Orientation="Horizontal"
+                      HorizontalAlignment="Right"
+                      Margin="0,12,0,0">
+                        <Button Content="Opslaan"
+                    Width="80"
+                    Margin="0,0,8,0"
+                    Click="BtnSave_Click"/>
+                        <Button Content="Annuleer"
+                    Width="80"
+                    Click="BtnCancel_Click"/>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </DockPanel>
+</Page>
